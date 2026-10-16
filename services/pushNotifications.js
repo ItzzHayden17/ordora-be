@@ -63,12 +63,14 @@ export async function notifyWaiter(storeId, waiterId, notification) {
             item.waiterId === String(waiterId)
     );
 
-    const payload = JSON.stringify({
-        title: notification.title || "Tablewise",
-        body: notification.body || "You have a new update.",
-        url: notification.url || "/",
-        tag: notification.tag || "tablewise-update",
-    });
+const payload = JSON.stringify({
+    title: notification.title || "Tablewise",
+    body: notification.body || "You have a new update.",
+    url: notification.url || "/",
+    tag: notification.tag || "tablewise-update",
+    vibrate: [200, 100, 200, 100, 300],
+    requireInteraction: true,
+});
 
     await Promise.all(
         targets.map(async (item) => {
