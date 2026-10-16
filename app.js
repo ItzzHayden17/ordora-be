@@ -18,7 +18,7 @@ app.use(helmet());
 const allowedOrigins = [
     'http://localhost:3000',
     'http://192.168.0.161:3000',
-    'https://empty-cooks-join.loca.lt',
+    'https://ordora-fe.onrender.com',
     process.env.FRONTEND_URL,
 ].filter(Boolean);
 
