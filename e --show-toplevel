@@ -1,0 +1,20 @@
+[33mcommit 93f41cdbb93181910df12a5f747bbb966c6af775[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ItzzHayden17 <sony.anray743@gmail.com>
+Date:   Fri Oct 16 17:35:12 2026 +0200
+
+    First commit,initial Protorype
+
+ .env                          |   9 [32m+[m
+ app.js                        |  76 [32m++++[m
+ data/store.js                 | 791 [32m++++++++++++++++++++++++++++++++++++++++++[m
+ routes/menu.routes.js         | 188 [32m++++++++++[m
+ routes/order.routes.js        | 256 [32m++++++++++++++[m
+ routes/party.routes.js        | 237 [32m+++++++++++++[m
+ routes/push.js                | 118 [32m+++++++[m
+ routes/request.routes.js      | 168 [32m+++++++++[m
+ routes/restaurant.routes.js   | 462 [32m++++++++++++++++++++++++[m
+ server.js                     |  15 [32m+[m
+ services/pushNotifications.js |  94 [32m+++++[m
+ utils/httpError.js            |   5 [32m+[m
+ utils/ids.js                  |   5 [32m+[m
+ 13 files changed, 2424 insertions(+)
