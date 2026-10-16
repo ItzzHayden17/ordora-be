@@ -4,10 +4,10 @@
   "private": true,
   "description": "Starter REST API for the Tablewise restaurant ordering platform",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
-  },
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
   "engines": {
     "node": ">=20"
   },
